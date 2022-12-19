@@ -66,6 +66,10 @@ body {
   font-weight: 700;
   margin-top: 30px;
 }
+.card button:hover {
+  border: 1px solid var(--common);
+  color: var(--common);
+}
 .card p {
   display: block;
   width: 200px;
@@ -84,8 +88,6 @@ body {
 }
 .sedan button:hover {
   background-color: var(--sedan_color);
-  border: 1px solid var(--common);
-  color: var(--common);
 }
 
 .suv {
@@ -97,8 +99,6 @@ body {
 }
 .suv button:hover {
   background-color: var(--suv_color);
-  border: 1px solid var(--common);
-  color: var(--common);
 }
 
 .luxury {
@@ -111,8 +111,6 @@ body {
 }
 .luxury button:hover {
   background-color: var(--luxury_color);
-  border: 1px solid var(--common);
-  color: var(--common);
 }
 
 .footer {
