@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://shroomsky.github.io/3-column-preview-card-component-/](https://shroomsky.github.io/3-column-preview-card-component-/)
 
 
 ### Built with
