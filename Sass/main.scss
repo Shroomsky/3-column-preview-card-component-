@@ -1,0 +1,142 @@
+:root {
+	--sedan_color: hsl(31, 77%, 52%);
+	--suv_color: hsl(184, 100%, 22%);
+	--luxury_color: hsl(179, 100%, 13%);
+	--paragraphs: hsla(0, 0%, 100%, 0.75);
+	--common: hsl(0, 0%, 95%);
+	--heading_font: "Big Shoulders Display", cursive;
+	--regular_font: "Lexend", sans-serif;
+	--font_size: 15px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--common);
+	font-family: var(--regular_font);
+}
+.wrapper {
+	flex: 1 0 auto;
+	margin: 10vh auto;
+	max-width: 300px;
+}
+.cards {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border: none;
+	border-radius: 15px;
+	margin-top: 15px;
+	font-size: var(--font_size);
+    min-width: 300px;
+}
+.card {
+	padding: 40px;
+	height: 480px;
+	width: 300px;
+	color: var(--common);
+	
+	& h1 {
+        margin-top: 10px;
+		font-weight: 700;
+		font-family: var(--heading_font);
+		padding: 20px 0px;
+		text-transform: uppercase;
+        font-size: 36px;
+	}
+	& button {
+		width: 120px;
+		height: 40px;
+		border: none;
+		border-radius: 25px;
+        font-weight: 700;
+	}
+	& p {
+        display: block;
+        width: 200px;
+        min-height: 200px;
+		padding: 25px 0px;
+		line-height: 2;
+		color: var(--paragraphs);
+	}
+}
+.sedan {
+	background-color: var(--sedan_color);
+	& button {
+		color: var(--sedan_color);
+		transition: all 0.3s;
+		&:hover {
+			background-color: var(--sedan_color);
+			border: 1px solid var(--common);
+			color: var(--common);
+		}
+	}
+}
+.suv {
+	background-color: var(--suv_color);
+	& button {
+		color: var(--suv_color);
+		transition: all 0.3s;
+		&:hover {
+			background-color: var(--suv_color);
+			border: 1px solid var(--common);
+			color: var(--common);
+		}
+	}
+}
+.luxury {
+	background-color: var(--luxury_color);
+	& button {
+		color: var(--luxury_color);
+		transition: all 0.3s;
+		&:hover {
+			background-color: var(--luxury_color);
+			border: 1px solid var(--common);
+			color: var(--common);
+		}
+		color: var(--luxury_color);
+	}
+}
+
+.footer {
+	flex-shrink: 0;
+	margin-top: 10px;
+	padding: 20px;
+	color: #fff;
+	background-color: rgba(26, 1, 31, 0.601);
+	& .attribution {
+		text-align: center;
+		& a {
+			text-decoration: none;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	.cards {
+		display: flex;
+		flex-direction: row;
+        
+	}
+    .wrapper{
+        max-width: 80vw;
+    }
+	
+}
+@media (max-width: 320px) {
+    .wrapper{
+       margin: auto auto;
+       max-width: 300px;
+    }
+    .card{
+        width: 300px;
+    }
+}
