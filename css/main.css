@@ -55,7 +55,7 @@ a {
   width: 300px;
   color: var(--common);
 }
-.card h1 {
+.card h2 {
   margin-top: 10px;
   font-weight: 700;
   font-family: var(--heading_font);
@@ -75,7 +75,7 @@ a {
   height: 40px;
   border: 1px solid;
   border-radius: 25px;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 30px;
   cursor: pointer;
 }
